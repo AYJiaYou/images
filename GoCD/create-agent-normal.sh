@@ -1,7 +1,9 @@
 #!/bin/bash
 
 docker run \
-    -d -P\
+    -d \
+    -p 8080:8080 -p 8081:8081 -p 8082:8082 -p 8083:8083 -p 8084:8084 \
+    -p 8085:8085 -p 8086:8086 -p 8087:8087 -p 8088:8088 -p 8089:8089 \
     -v /root/AYData/GoCD/Agent2:/godata:z \
     -v /root:/home/go:z \
     -e GO_SERVER_URL=https://172.17.0.3:8154/go \
