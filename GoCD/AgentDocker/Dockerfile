@@ -3,4 +3,5 @@ MAINTAINER lfree xh <xh@ayjiayou.com>
 
 # install docker
 RUN yum install -y docker && \
-    systemctl enable docker.service
+    systemctl enable docker.service && \
+    systemctl start docker.service
