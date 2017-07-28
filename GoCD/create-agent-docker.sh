@@ -8,4 +8,5 @@ docker run \
     -e AGENT_AUTO_REGISTER_KEY="35d07d00-6ef0-459a-9ceb-3845a3039717" \
     -e AGENT_AUTO_REGISTER_HOSTNAME=agent-docker \
     --privileged \
+    --cap-add SYS_ADMIN \
     ayjiayou/gocd-agent-docker
