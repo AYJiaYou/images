@@ -9,4 +9,5 @@ docker run \
     -e AGENT_AUTO_REGISTER_HOSTNAME=agent-docker \
     --privileged \
     --cap-add SYS_ADMIN \
+    -v /root/AYData/GoCD/GoHome:/home/go:z \
     ayjiayou/gocd-agent-docker
