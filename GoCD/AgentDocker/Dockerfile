@@ -16,5 +16,4 @@ CMD ["/usr/sbin/init"]
 
 # install docker
 RUN yum install -y docker && \
-    systemctl enable docker.service && \
-    systemctl start docker.service
+    systemctl enable docker.service
