@@ -1,1 +1,1 @@
-# images
+# various GoCD agent environments
