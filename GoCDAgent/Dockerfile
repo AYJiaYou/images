@@ -1,4 +1,4 @@
-FROM gocd/gocd-agent-centos-7:v17.5.0
+FROM gocd/gocd-agent-centos-7:v17.12.0
 MAINTAINER lfree xh <xh@ayjiayou.com>
 
 # install&config go environment
