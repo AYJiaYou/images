@@ -1,7 +1,7 @@
-FROM alpine:3.6
+FROM alpine:3.7
 MAINTAINER lfree xh <xh@ayjiayou.com>
 
-RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ add \
+RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ add --update \
     libbsd=0.8.6-r1 libwebp php7 php7-fpm php7-gd php7-session php7-xml nginx supervisor curl tar
 
 RUN mkdir -p /run/nginx && \
