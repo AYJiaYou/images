@@ -12,4 +12,12 @@ RUN sudo echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" 
     apt-get update && \
     apt-get install -y sshpass ansible
 
+# install go
+#ADD ./go1.10.linux-amd64.tar.gz /usr/local/
+ADD https://dl.google.com/go/go1.10.linux-amd64.tar.gz /usr/local/
+RUN cd /usr/local && \
+    tar -xf ./go1.10.linux-amd64.tar.gz && \
+    rm -f go1.10.linux-amd64.tar.gz
+ENV PATH /usr/local/go/bin:$PATH
+
 USER jenkins
