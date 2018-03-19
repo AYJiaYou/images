@@ -20,4 +20,9 @@ RUN cd /usr/local && \
     rm -f go1.10.linux-amd64.tar.gz
 ENV PATH /usr/local/go/bin:$PATH
 
+# install nodejs
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash - && \
+    apt-get install nodejs && \
+    apt-get install npm
+
 USER jenkins
