@@ -1,4 +1,5 @@
-FROM registry.docker-cn.com/jenkins/jenkins:lts
+FROM jenkins/jenkins:lts
+#FROM registry.docker-cn.com/jenkins/jenkins:lts
 MAINTAINER lfree xh <xh@ayjiayou.com>
 
 USER root
